@@ -1,0 +1,21 @@
+Usage:
+encode_known_faces(): creates an encoded dictionary of faces in the training folder
+recognize_faces(path_to_image): detects faces within an image and identifies them
+
+Running the program for the first time should always be done with the encode_known_faces call uncommented. This creates the encodings file in the output folder. 
+Subsequently, the encodings file need only be updated if the model needs to be trained on a new face.
+
+Functioning correctly, the program should display the image passed into recognize_faces with the faces outlined in blue and a label indicating the name of the person identified. 
+
+Instructions:
+
+*ensure py launcher is installed when installing python
+Create a virtual environment using python 3.9
+If multiple versions of python run "py -3.9 -m venv detector"
+Activate venv using "detector/scripts/activate"
+
+Install chocolatey https://chocolatey.org/install
+Install CMake https://cmake.org/download/
+Run "choco install mingw"   (c compiler install)
+Run "python -m pip install -r requirements.txt"
+
